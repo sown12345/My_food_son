@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:padding="16dp">
+
+    <!-- Hình ảnh góc trên trái -->
+    <ImageView
+        android:id="@+id/ivTopLeft"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/com_tam_sai_gon" />
+
+    <!-- Hình ảnh góc trên phải -->
+    <ImageView
+        android:id="@+id/ivTopRight"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/hu_tieu_nam_vang" />
+
+    <!-- Hình ảnh góc dưới trái -->
+    <ImageView
+        android:id="@+id/ivBottomLeft"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/bun_bo_hue" />
+
+    <!-- Hình ảnh góc dưới phải -->
+    <ImageView
+        android:id="@+id/ivBottomRight"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/banh_xeo" />
+
+    <!-- Hình ảnh giữa trên -->
+    <ImageView
+        android:id="@+id/ivCenterTop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <!-- Tiêu đề Foody App -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foody App"
+        android:textSize="28sp"
+        android:textColor="#FF5722"
+        android:layout_below="@id/ivCenterTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Trường Tên đăng nhập -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên đăng nhập"
+        android:inputType="text"
+        android:layout_below="@id/ivCenterTop"
+        android:layout_marginTop="100dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp" />
+
+    <!-- Trường Password -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/etUsername"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp" />
+
+    <!-- Nút Đăng Nhập -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn chưa có tài khoản? Đăng ký"
+        android:textColor="#2196F3"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>
